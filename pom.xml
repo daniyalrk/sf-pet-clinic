@@ -15,7 +15,7 @@
 	</parent>
 	<groupId>bnv.com</groupId>
 	<artifactId>sf-pet-clinic</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>sf-pet-clinic</name>
 	<description>Spring Pet clinic Project</description>
 	<properties>
@@ -30,7 +30,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+	<scm>
+		<developerConnection>scm:git:https://github.com/daniyalrk/sf-pet-clinic.git</developerConnection>
+	</scm>
 
 </project>
